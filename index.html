@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript">
+      // Get the current path
+      var path = window.location.pathname;
+      
+      // Check if the path matches our specific redirects
+      if (path === '/privacy-japanese') {
+        window.location.href = 'https://fewcents.webflow.io/privacy-japanese';
+      } else if (path === '/terms-japanese') {
+        window.location.href = 'https://fewcents.webflow.io/terms-japanese';
+      } else {
+        // Default redirect for all other paths
+        window.location.href = 'https://entitl.ai';
+      }
+    </script>
+    <!-- Fallback meta refresh for browsers with JavaScript disabled -->
     <meta http-equiv="refresh" content="0; url=https://entitl.ai">
   </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>
